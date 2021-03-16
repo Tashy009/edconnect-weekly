@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-primary">
+        <a class="navbar-brand text-light">Project Explorer</a>
+        <ul class="navbar-nav mr-auto">
+            <li>
+                <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" name="searchForm" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+                <button class="btn text-light" type="submit">Submit</button>
+                </form>
+            </li>
+        </ul>
+        <form>
+            <button class="btn text-light" type="submit">Sign up</button>
+            <button class="btn text-light" type="submit">Login</button>
+        </form>
+    </nav>
+       <!--- <header>
+                <h1>Project Explorer</h1>
+        
+                <h2>One stop Database For Academic Projects </h2>
+            </header>
+            <nav>
+                <ul>
+                    <li style="display:inline-block;">
+                        <a href="index.html" ><h1>Home</h1></a>
+                    </li>
+                    <li style="display:inline-block;">
+                        <a href="search.html" ><h1>Projects</h1></a>
+                    </li>
+                    <li style="display:inline-block;">
+                        <a href=login.html><h1>Login</h1></a>
+                    </li>
+                    <li style="display:inline-block;">
+                        <a href=register.html ><h1>Register</h1></a>
+                    </li>
+                   
+                    
+                </ul>
+                
+            </nav>-->
+            <main>
+                <div class="container d-flex align-items-baseline flex-wrap mt-5 mx-5">
+                    <h3 class="mr-1">John Doe</h3>
+                    john.doe@gmail.com
+                </div>
+                <div class="row mx-5 bg-light">
+                    <div class="col">
+                    Program
+                    </div>
+                    <div class="col">
+                    Matriculation number
+                    </div>
+                    <div class="col">
+                    Graduation year
+                    </div>
+                </div>
+                <div class="row mx-5 bg-light">
+                    <div class="col">
+                    Computer Information System
+                    </div>
+                    <div class="col">
+                    33/3333
+                    </div>
+                    <div class="col">
+                    2018
+                    </div>
+                </div>
+                <div class="update-profile mt-5 mx-5">
+                    <h3>Update Profile</h3>
+                    <hr>
+                </div>
+                <div class="mt-5 mx-auto" style="width: 900px;">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="firstName">First Name:</label>
+                                <input type="text" class="form-control" placeholder="First Name" id="firstName" name="firstName">
+                            </div>
+                            <div class="form-group col-md-6" >
+                                <label for="Email">Last Name:</label>
+                                <input type="text" class="form-control" placeholder="Last Name" id="lastName" name="lastName">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputEmailAddress">Email Address</label>
+                              <input type="email" class="form-control" id="inputEmailAddress" placeholder="Your Email address" name="email">
+                            </div>
+                            <div class="form-group col-md-6">
+
+                                <label for="Program">Program</label>
+                                <select name="Program" class="form-control" id="Program">
+                                   <option value="computer_science">Computer Science</option>
+                                   <option value="computer_information_systems">Computer Information Systems</option>
+                                   <option value="computer_technology">Computer Technology</option>
+                                </select>
+                               </div>
+                            
+                        </div>
+                        <div class="form-row">
+                            
+                            <div class="form-group col-md-6">
+                                <label for="inputMatriculationNumber">Matriculation Number</label>
+                                <input type="text" class="form-control" id="inputMatriculationNumber" placeholder="e.g 16/2020" name="matricNumber">
+                            </div>
+                            <div class="form-group col-md-6">
+    
+                                <label for="graduationYear">Graduation Year::</label>
+    
+                                <select name="graduationYear" class="form-control" id="graduationYear">
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                </select><br><br>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-n5">Update Profile</button>
+                        </form> 
+                </div>
+                <div class="confirm-password mt-2 mx-5">
+                    <h3>Confirm Password</h3>
+                    <hr>
+                </div>
+                
+                <div class="update-profile mt-2 mx-auto" style="width: 900px;">
+                    <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                           <label for="inputPassword">Current Password</label>
+                           <input type="password" class="form-control" id="inputPassword" placeholder="Current password" name="currentPassword">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputPassword">New Password</label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Your new password" name="newPassword">
+                         </div>
+                         <div class="form-group col-md-4">
+                            <label for="inputPassword">Confirm Password</label>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Confirm new password" name="confirmPassword">
+                         </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Change Password</button>
+                </form>
+                </div>
+               
+
+            </main>
+            <footer>
+                <ul class="nav navbar-light bg-light justify-content-end mt-5 mx-5">
+                    <li class="nav-item">
+                        <a class="nav-link project-explorer disabled text-secondary" href="#" tabindex="-1" aria-disabled="true">Project Explorer &copy 2020.</a>
+                    </li>
+                    <li class="nav-item ml-n4">
+                        <a class="nav-link disabled text-dark" href="#" tabindex="-1" aria-disabled="true">Edconnect</a>
+                    </li> 
+                </ul>
+            </footer>
+    
+
+    
+</body>
+</html>

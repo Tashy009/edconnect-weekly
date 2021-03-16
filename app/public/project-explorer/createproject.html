@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-primary">
+        <a class="navbar-brand text-light">Project Explorer</a>
+        <ul class="navbar-nav mr-auto">
+            <li>
+                <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" name="searchForm" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+                <button class="btn text-light" type="submit">Submit</button>
+                </form>
+            </li>
+        </ul>
+        <form>
+            <button class="btn text-light" type="submit">Sign up</button>
+            <button class="btn text-light" type="submit">Login</button>
+        </form>
+    </nav>
+      <!---  <header>
+                <h1>Project Explorer</h1>
+        
+                <h2>One stop Database For Academic Projects </h2>
+        </header>
+            <nav>
+                <ul>
+                    <li style="display:inline-block;">
+                        <a href="index.html" ><h1>Home</h1></a>
+                    </li>
+                    <li style="display:inline-block;">
+                        <a href="search.html" ><h1>Projects</h1></a>
+                    </li>
+                    <li style="display:inline-block;">
+                        <a href=login.html><h1>Login</h1></a>
+                    </li>
+                    <li style="display:inline-block;">
+                        <a href=register.html ><h1>Register</h1></a>
+                    </li>
+                   
+                    
+                </ul>
+                
+            </nav>-->
+            <main>
+                <!--<h2>Submit Project</h2>
+
+                <form>
+                     <label for="name">Project Name:</label><br>
+                     <input type="text" id="name" name="name"><br><br>
+                    <label for="abstract">Project Abstract:</label><br>
+                    <textarea type="text" name="abstract"></textarea><br><br>
+                    <label for="authors">Authors:</label><br>
+                    <input type="text" id="authors" name="authors"><br><br>
+                    <label for="tags">Tag(s):</label><br>
+                    <input type="text" id="tags" name="tags"><br><br>
+                    <input type="submit" value="Submit">
+                </form>-->
+              <div class="mt-5 mx-auto" style="width: 700px;">
+                    <h3>Submit Project</h3>
+                
+                <form class="form-row mx-auto">
+                    <div class="form-group col-md-10">
+                        <label for="inputProjectName">Project name</label>
+                        <input type="text" class="form-control" id="inputProjectName" placeholder="Enter project name" name="name">
+                    </div>
+                    <div class="form-group col-md-10">
+                        <label for="abstractFormControlTextArea">Project abstract</label>
+                        <textarea class="form-control" id="abstractFormControlTextArea" rows="5" name="abstract"></textarea>
+                    </div>
+                    <div class="form-group col-md-10">
+                        <label for="authorName">Author(s)</label>
+                        <input type="text" class="form-control" id="authorName" placeholder="Enter author names (separated by comma)" name="authors">
+                    </div>
+                    <div class="form-group col-md-10">
+                        <label for="tagProject">Tag(s)</label>
+                        <input type="text" class="form-control" id="tagProject" placeholder="Use # to tag project with different topics (e.g. #javascript #mongodb)" name="tags">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <button type="submit" class="btn btn-primary">Continue</button>
+                    </div>
+                </form>
+              </div>
+            </main>
+            <footer>
+                <ul class="nav navbar-light bg-light justify-content-end mt-5 mx-5">
+                    <li class="nav-item">
+                        <a class="nav-link project-explorer disabled text-secondary" href="#" tabindex="-1" aria-disabled="true">Project Explorer &copy 2020.</a>
+                    </li>
+                    <li class="nav-item ml-n4">
+                        <a class="nav-link disabled text-dark" href="#" tabindex="-1" aria-disabled="true">Edconnect</a>
+                    </li> 
+                </ul>
+            </footer>
+    
+</body>
+</html>
