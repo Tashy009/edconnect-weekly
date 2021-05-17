@@ -9,6 +9,7 @@ class DataModel {
     }
 
     getById(id) {
+        return this.data.find(objs => objs.id === id) || null
 
     }
 
@@ -21,15 +22,35 @@ class DataModel {
     }
 
     update(obj, id) {
+        let index = this.data.findIndex((n) => n.id === id)
+        if (index !== -1) {
+            let found = this.data[index]
+            for (let i in obj) {
+                found[i] = obj[i]
+            }
+            this.data[index] = found
+
+            return true
+
+        }else {
+            return false
+        }
+
 
     }
 
     delete(id) {
+            let  fdata = this.data.find(objs => objs.id === id)
+            if (this.data.includes(fdata)){
+                this.data.splice(this.data.indexOf(fdata), 1)
+                return true
+            }
+            return false
 
     }
 
     // this method will be overriden in the sub classes
-    validate(obj) {
+    validate(obj){
         return false;
     }
 }
