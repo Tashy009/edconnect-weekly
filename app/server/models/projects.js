@@ -16,10 +16,17 @@ class Projects extends DataModel {
         this.errors = []
         var former = true
         var latter = true
+        var ment = true
         
-        if (!Array.isArray(obj.authors) && !Array.isArray(obj.tags)){
+        if (!Array.isArray(obj.authors)){
             latter = false
-            this.errors.push("Authors should be an array")
+            this.errors.push("Tags should be an array")
+            
+        }
+
+        
+        if (!Array.isArray(obj.tags)){
+            ment = false
             this.errors.push("Tags should be an array")
             
         }
