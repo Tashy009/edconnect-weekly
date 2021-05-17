@@ -30,7 +30,7 @@ class Projects extends DataModel {
                 this.errors.push(`${key} should not be empty`)
                 
             }
-            }
+        }
 
         if(former === true && latter === true){
             this.errors = []
