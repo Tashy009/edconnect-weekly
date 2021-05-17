@@ -16,6 +16,14 @@ class Projects extends DataModel {
         this.errors = []
         var former = true
         var latter = true
+        
+        if (!Array.isArray(obj.authors) && !Array.isArray(obj.tags)){
+            latter = false
+            this.errors.push("Authors should be an array")
+            this.errors.push("Tags should be an array")
+            
+        }
+
         for (let key in obj){
             if (obj[key] == ''|| obj[key] == [] || obj[key] == null ){
                 former = false
@@ -23,15 +31,12 @@ class Projects extends DataModel {
                 
             }
         }
-        if (!Array.isArray(obj.authors) && !Array.isArray(obj.tags)){
-            latter = false
-            this.errors.push("Authors should be an array")
-            this.errors.push("Tags should be an array")
-            
-        }
+        
         if(former === true && latter === true){
             this.errors = []
             return true
+
+        
         }else{
             
             return false

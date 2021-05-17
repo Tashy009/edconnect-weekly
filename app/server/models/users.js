@@ -28,7 +28,7 @@ class Users extends DataModel {
         }
         return auth
 
-    }
+    }     
 
     getByEmail(email) {
         return this.data.find(objs => objs.email === email) || null
