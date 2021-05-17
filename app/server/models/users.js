@@ -47,7 +47,7 @@ class Users extends DataModel {
         var second = true
         var third = true
         for (let key in obj){
-            if (obj[key] == ''|| obj[key] === undefined){
+            if (obj[key] == ''|| obj[key] === undefined || obj[key] == [] || obj[key] == null ){
                 zeroth = false
                 this.errors.push(`${key} should not be empty`)
                 
