@@ -26,8 +26,10 @@ class Projects extends DataModel {
 
         for (let key in obj){
             if (obj[key] == ''|| obj[key] == [] || obj[key] == null ){
-                former = false
-                this.errors.push(`${key} should not be empty`)
+                if (key !== 'authors' && key !== 'tags'){
+                    former = false
+                    this.errors.push(`${key} should not be empty`)
+                }
                 
             }
         }
