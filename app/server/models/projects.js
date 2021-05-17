@@ -17,7 +17,7 @@ class Projects extends DataModel {
         var former = true
         var latter = true
         for (let key in obj){
-            if (obj[key] == ''){
+            if (obj[key] == ''|| obj[key] == [] || obj[key] == null ){
                 former = false
                 this.errors.push(`${key} should not be empty`)
                 
