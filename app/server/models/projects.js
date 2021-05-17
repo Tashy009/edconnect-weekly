@@ -14,37 +14,21 @@ class Project {
 class Projects extends DataModel {
     validate(obj) {
         this.errors = []
-        var former = true
-        var latter = true
-        var ment = true
-        
-        if (!Array.isArray(obj.authors)){
-            latter = false
-            this.errors.push("Tags should be an array")
-            
-        }
-
-        
-        if (!Array.isArray(obj.tags)){
-            ment = false
-            this.errors.push("Tags should be an array")
-            
-        }
-
         for (let key in obj){
-            if (obj[key] == ''|| obj[key] == [] || obj[key] == null ){
-                if (key !== 'authors' && key !== 'tags'){
-                    former = false
-                    this.errors.push(`${key} should not be empty`)
-                }
+            if (key == 'authors' && !Array.isArray(obj[key])){
+                this.errors.push(`${key} should be an array`);
+
+            }else if (key == 'tags' && !Array.isArray(obj[key])){
+                this.errors.push(`${key} should be an array`);
                 
+            }else if (obj[key] == '' || obj[key] == [] || obj[key] == null){
+                if (key !== 'authors' && key !== 'tags'){
+                    this.errors.push(`${key} should not be empty`);
+                }
             }
         }
-
-        if(former === true && latter === true){
-            this.errors = []
-            return true
-
+        if(this.errors.length == 0){
+            return true;
         
         }else{
             
