@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+        <a class="navbar-brand text-light">Project Explorer</a>
+        <ul class="navbar-nav mr-auto">
+            <li>
+                <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" name="searchForm" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+                <button class="btn text-light" type="submit">Submit</button>
+                </form>
+            </li>
+        </ul>
+        <div class="ml-auto navbar-nav">
+            <a class="nav-link" href="register.htnl" id="signuplink" type="submit">Sign up</a>
+            <a class="nav-link" href="login.html" id="loginlink"  type="submit">Login</a>
+            <a class="nav-link" id="logoutlink" type="submit">Logout </a>
+            <span  class="navbar-text text-light" id="username"></span>
+            <span class="navbar-text" id="username"></span>
+        </div>
+    </nav>
+        <!--<header>
+                <h1>Project Explorer</h1>
+        
+                <h2>One stop Database For Academic Projects </h2>
+            </header>
+            <nav>
+                <ul>
+                    <li style="display:inline-block;">
+                        <a href="index.html" ><h1>Home</h1></a>
+                    </li>
+                    <li style="display:inline-block;">
+                        <a href="search.html" ><h1>Projects</h1></a>
+                    </li>
+                    <li style="display:inline-block;">
+                        <a href=login.html><h1>Login</h1></a>
+                    </li>
+                    <li style="display:inline-block;">
+                        <a href=register.html ><h1>Register</h1></a>
+                    </li>
+                   
+                    
+                </ul>
+                
+            </nav>-->
+    <main>
+        <div>
+            <div class="mt-5 mx-5">
+                <h3>Project Gallery</h3>
+            </div>
+            <div class="bg-light p-3 mx-5">
+                <form name="searchForm">
+                    <div class="form-row d-flex align-items-center">
+                        <div class="form-group col-md-9">
+                            <label for="inlineFormInputSearchProject" class="form-label"></label>
+                            <input class="form-control form-control-lg" type="text" name="searchTerm" id="inlineFormInputSearchProject" placeholder="Search project name, authors, abstract, tags">
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-lg btn-secondary">Search by</button>
+                        </div>
+                        <div class="form-group col-auto h-50 d-inline-block">
+                            <label class="form-label" for="inlineFormName"></label>
+                            <select class="custom-select form-control form-control-lg" id="inlineFormName" required name="searchType">
+                            <option selected disabled value=" Name">Name</option>
+                            <option value="Abstract">Abstract</option>
+                            <option value="Author">Author</option>
+                            <option value="Tags">Tags</option>
+                            </select>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-lg btn-primary" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container mt-5 mx-5">
+            <h4>All project</h4>
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title</h5>
+                            <h6 class="card-subtitle">Author 1, Author 2</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#html">#html</a>
+                            <a href="#css">#css</a>
+                            <a href="#javascript">#javascript</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Title</h5>
+                            <h6 class="card-subtitle">Author 1, Author 2</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#html">#html</a>
+                            <a href="#css">#css</a>
+                            <a href="#javascript">#javascript</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div>
+            <!--<h3>Search Project By</h3>
+            <form>
+                <input type="text" id="searchTerm" name="searchTerm" placeholder="Project Name, Authors, Abstract, Tags"><br><br>
+                <label for="searchType">Search By:</label><br>
+                <select name="searchType" id="searchType">
+                    <option value="Name">Name</option>
+                    <option value="Abstract">Abstract</option>
+                    <option value="Author">Author</option>
+                    <option value="Tags">Tags</option>
+                </select><br><br>
+                <input type="password" id="pwd" name="password"><br><br>
+                <input type="submit" value="Search">
+            </form>
+        </div>
+        <div>
+            <h2>Search Result</h2>
+            <h3>Project 1</h3>
+            <ul>
+                <li>Name: Project 1</li>
+                <li>Description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore sapiente doloribus ipsam quos laborum sint deleniti mollitia obcaecati modi iure iste, maiores aspernatur ex, reprehenderit, nam ut molestias voluptate quo.</li>
+                <li>Program : computer Science</li>
+                <li>Authors: John Doe, Jane Doe</li>
+                <li>Tags: #Asphyxia, #GSW</li>
+                <l1>Year: 2018</l1>
+            </ul>
+        </div>-->
+
+    </main>
+    <footer>
+        <ul class="nav navbar-light bg-light justify-content-end mt-5 mx-5">
+            <li class="nav-item">
+                <a class="nav-link project-explorer disabled text-secondary" href="#" tabindex="-1" aria-disabled="true">Project Explorer &copy 2020.</a>
+            </li>
+            <li class="nav-item ml-n4">
+                <a class="nav-link disabled text-dark" href="#" tabindex="-1" aria-disabled="true">Edconnect</a>
+            </li> 
+        </ul>
+    </footer>
+    <script src="js/app.js"></script>
+    
+    
+</body>
+</html>

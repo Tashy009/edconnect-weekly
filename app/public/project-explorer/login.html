@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--nav bar-->
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+        <a class="navbar-brand text-light">Project Explorer</a>
+        <ul class="navbar-nav mr-auto">
+            <li>
+                <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" name="searchForm" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+                <button class="btn text-light" type="submit">Submit</button>
+                </form>
+            </li>
+        </ul>
+        <div class="ml-auto navbar-nav">
+            <a class="nav-link" href="register.htnl" id="signuplink" type="submit">Sign up</a>
+            <a class="nav-link" href="login.html" id="loginlink"  type="submit">Login</a>
+            <a class="nav-link" id="logoutlink" type="submit">Logout </a>
+            <span  class="navbar-text text-light" id="username"></span>
+            <span class="navbar-text text-light" id="username"></span>
+        </div>
+    </nav>
+        <!--<header>
+                <h1>Project Explorer</h1>
+        
+                <h2>One stop Database For Academic Projects </h2>
+            </header>
+            <nav>
+                <ul>
+                    <li style="display:inline-block;">
+                        <a href="index.html" ><h1>Home</h1></a>
+                    </li>
+                    <li style="display:inline-block;">
+                        <a href="search.html" ><h1>Projects</h1></a>
+                    </li>
+                    <li style="display:inline-block;">
+                        <a href=login.html><h1>Login</h1></a>
+                    </li>
+                    <li style="display:inline-block;">
+                        <a href=register.html ><h1>Register</h1></a>
+                    </li>
+                    
+                    
+                </ul>
+                
+            </nav>-->
+    <main>
+        <div class="mt-5 mb-5 mx-auto" style="width: 500px;">
+            <h1>Login</h1>
+            <div class="alert alert-danger" style="display: none;" id="alertErrors" role="alert"></div>
+            <!-- <form>
+                <label for="email">Email addresss:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="passwod">Last name:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <input type="submit" value="Submit">
+            </form>-->
+            <form id="loginForm" action="" method="get" >
+                <div class="form-group">
+                    <label for="Email">Email address</label>
+                    <input type="email"  name="email" class="form-control" id="Email" placeholder="Enter Email" aria-describedby="emailHelp">
+                    
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" name="password" class="form-control" placeholder="Password" id="exampleInputPassword1">
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Login</button>
+             </form>
+        </div>
+    </main>
+    <footer>
+        <ul class="nav navbar-light bg-light justify-content-end mt-2 mx-5">
+            <li class="nav-item">
+                <a class="nav-link project-explorer disabled text-secondary" href="#" tabindex="-1" aria-disabled="true">Project Explorer &copy 2020.</a>
+            </li>
+            <li class="nav-item ml-n4">
+                <a class="nav-link disabled text-dark" href="#" tabindex="-1" aria-disabled="true">Edconnect</a>
+            </li> 
+        </ul>
+    </footer>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
