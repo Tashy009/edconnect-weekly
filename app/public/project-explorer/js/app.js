@@ -270,7 +270,7 @@ if(path.includes("index.html") || path.includes("viewproject.html") || path.incl
 
 if(path.includes("createproject.html")){
 
-    let createProjectForm = document.querySelector('#createprojectform');
+    let createProjectForm = document.querySelector('#createProjectForm');
 
     createProjectForm.addEventListener('submit', function(e){
 
