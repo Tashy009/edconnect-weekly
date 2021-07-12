@@ -58,7 +58,7 @@ const BuildForm = () => {
       .then(({errorsFromServer, serverData}) => {
         if (errorsFromServer) {
             setShowAlert(true);
-            setAlertText(serverData.errors);
+            setAlertText("Invalid email/password");
           
         } else {
             document.cookie = `uid=${serverData.data.id}; domain=; path=/ `;
